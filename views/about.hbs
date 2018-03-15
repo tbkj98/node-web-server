@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{pageTitle}}</title>
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <script src="js/index.js" type="text/javascript"></script>
+</head>
+<body>
+    <!-- Header Starts -->
+    <header class="brand">
+        <h1 id="brand_name">Devin</h1>
+        <p id="tag_line">Where developers stores information</p>
+    </header>
+    <!-- Header Ends -->
+
+    <!-- Main Section Starts -->
+    <section class="main">
+        <div class="description">
+            {{> heading}}
+            <h3 style="padding-top:25px;">Store Information easily and safely</h3>
+            <p class="info">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A deleniti dolorum, autem error ullam perspiciatis, quas assumenda quos velit expedita tenetur repellendus atque animi. Ipsum placeat soluta quidem consequuntur sint?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A deleniti dolorum, autem error ullam perspiciatis, quas assumenda quos velit expedita tenetur repellendus atque animi. Ipsum placeat soluta quidem consequuntur sint?
+            </p>
+        </div>
+        <div class="login">
+            <form action="php/process.php" method="post">
+                    <label for="email" >Email</label><br>
+                    <div class="input">
+                        <input type="email" name="email" id="email" >
+                    </div><br>
+                    <label for="password">Password</label><br>
+                    <div class="input">
+                        <input type="password" name="password" id="password">
+                    </div><br>
+                    <input type="submit" onclick="login(event)" value="Log In" id="button">
+            </form>
+            
+        </div>
+    </section>
+    {{> footer }}
+</body>
+</html>
